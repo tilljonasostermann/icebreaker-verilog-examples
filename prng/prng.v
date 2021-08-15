@@ -46,6 +46,7 @@ end
 
 // Psydo random numbers
 // Small block to create a random output stream, called on the CLK signal generated and outputed on P1A8
+// The user button UBUTTON needs to be pushed to start the bitstream
 reg [3:0] b;
 
 //LFSR feedback bit
@@ -66,6 +67,5 @@ end
 
 // assign the output signals to the ports
 assign P1A7 = b[0]; // pseudo random output
-assign P1A8 = CLK_375kHz; // 1.5MHz clock
 
 endmodule
