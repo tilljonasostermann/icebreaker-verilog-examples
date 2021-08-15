@@ -22,7 +22,7 @@
 module top (
 	input CLK,
 	input BTN_N,
-    output P1A9,
+    output P1A7,
     output LEDG_N
 );
 
@@ -46,7 +46,7 @@ always@(posedge CLK or negedge BTN_N) begin
  end
 end
 
-assign P1A9 = b[0];
+assign P1A7 = b[0];
 
 
 endmodule
